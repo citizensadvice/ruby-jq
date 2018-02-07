@@ -6,6 +6,7 @@ RUN curl -L 'https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64'
 
 RUN apt update && \
     apt install -y graphviz &&  \
+    gem install bundler && \
     rm -rf /var/lib/apt/lists/*
 
 USER 1000
