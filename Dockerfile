@@ -9,5 +9,7 @@ RUN apt update && \
     gem install bundler && \
     rm -rf /var/lib/apt/lists/*
 
+RUN chmod 777 -R /usr/local/bundle
+
 USER 1000
 WORKDIR /code
