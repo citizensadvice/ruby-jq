@@ -1,4 +1,4 @@
-FROM ruby:2.5.1
+FROM ruby:2.5.3
 
 RUN curl -L 'https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64' \
       > /usr/bin/jq && \
